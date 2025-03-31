@@ -26,7 +26,6 @@
     <div class="container header-container">
       <div class="logo">
         <img src="assets/image.png" alt="EIILM Logo">
-        <!-- <div class="logo-text">EIILM-KOLKATA</div> -->
       </div>
       
       <button class="mobile-menu-toggle" id="mobile-menu-toggle">
@@ -40,6 +39,9 @@
         <a href="#testimonials">Testimonials</a>
         <a href="#why-eiilm">Why Us</a>
         <a href="#contact">Contact</a>
+        <a href="#" class="nav-highlight download-brochure-btn">
+          <i class="fas fa-download"></i> Brochure
+        </a>
       </nav>
       
       <button class="theme-toggle" id="theme-toggle">
@@ -69,15 +71,16 @@
             <label for="phone" class="form-label">Phone Number</label>
             <input type="tel" id="phone" name="phone" class="form-input" required>
           </div>
-          
           <div class="form-group">
             <label for="program" class="form-label">Program of Interest</label>
             <select id="program" name="program" class="form-select" required>
               <option value="">Select a program</option>
-              <option value="BBA">Bachelor of Business Administration</option>
-              <option value="BCA">Bachelor of Computer Applications</option>
-              <option value="MBA">Master of Business Administration</option>
-              <option value="MCA">Master of Computer Applications</option>
+              <option value="BBA(H)">Bachelor of Business Administration Honours</option>
+              <option value="BBA IN HOSPITAL MANAGEMENT">BBA In Hospital Management</option>
+              <option value="BBA IN Hotel And HOSPITAL MANAGEMENT">BBA In Hotel And Hospitality Management</option>
+              <option value="BCA(H)">Bachelor of Computer Applications Honours</option>
+              <option value="MBA REGULAR">Master of Business Administration Regular</option>
+              <option value="MBA WITH SPECIALIZATION IN BUSINESS ANALYST">MBA With Specialization In Business Analytics & Data Science</option>
             </select>
           </div>
           
@@ -125,7 +128,7 @@
       
       <div class="about-content">
         <div class="about-image">
-          <img src="assets/image_1743189601542.png" alt="EIILM Campus">
+          <img src="assets/campuslife.jpg" alt="EIILM Campus">
         </div>
         
         <div class="about-text">
@@ -245,16 +248,16 @@
       
       <div class="testimonials-container">
         <div class="testimonial-card">
-          <img src="assets/image_1743189620485.png" alt="Rahul Sharma" class="testimonial-image">
+          <img src="assets/candidate3.jpg" alt="Rahul Sharma" class="testimonial-image">
           <div class="testimonial-content">
             <p class="testimonial-quote">"My experience at EIILM has been transformative. The faculty, curriculum, and industry exposure helped me secure a position at a leading multinational company right after graduation."</p>
-            <div class="testimonial-author">Rahul Sharma</div>
+            <div class="testimonial-author">Beas Das</div>
             <div class="testimonial-program">BBA Graduate, 2023</div>
           </div>
         </div>
         
         <div class="testimonial-card">
-          <img src="assets/image_1743189620485.png" alt="Priya Patel" class="testimonial-image">
+          <img src="assets/candidate1.jpg" alt="Priya Patel" class="testimonial-image">
           <div class="testimonial-content">
             <p class="testimonial-quote">"The practical approach to learning at EIILM gave me an edge in the job market. The projects and internships were instrumental in building my professional portfolio."</p>
             <div class="testimonial-author">Priya Patel</div>
@@ -263,7 +266,7 @@
         </div>
         
         <div class="testimonial-card">
-          <img src="assets/image_1743189620485.png" alt="Amit Gupta" class="testimonial-image">
+          <img src="assets/candidate2.jpg" alt="Amit Gupta" class="testimonial-image">
           <div class="testimonial-content">
             <p class="testimonial-quote">"The MBA program at EIILM equipped me with both strategic thinking and practical leadership skills. The network I built during my time here continues to benefit my career."</p>
             <div class="testimonial-author">Amit Gupta</div>
@@ -348,12 +351,13 @@
       <p class="section-subtitle">Leading companies that regularly recruit from EIILM.</p>
       
       <div class="recruiters-container">
-        <img src="assets/image_1743192930883.png" alt="TCS" class="recruiter-logo">
-        <img src="assets/image_1743192930883.png" alt="Infosys" class="recruiter-logo">
-        <img src="assets/image_1743192930883.png" alt="Wipro" class="recruiter-logo">
-        <img src="assets/image_1743192930883.png" alt="Accenture" class="recruiter-logo">
-        <img src="assets/image_1743192930883.png" alt="IBM" class="recruiter-logo">
-        <img src="assets/image_1743192930883.png" alt="Amazon" class="recruiter-logo">
+        <img src="assets/airtel.webp" alt="AIRTEL" class="recruiter-logo">
+        <img src="assets/amul.webp" alt="AMUL" class="recruiter-logo">
+        <img src="assets/bata.webp" alt="BATA" class="recruiter-logo">
+        <img src="assets/tcs-1.webp" alt="TCS" class="recruiter-logo">
+        <img src="assets/deloitte-logo.webp" alt="DELOITTE" class="recruiter-logo">
+        <img src="assets/byus.webp" alt="BYJUS" class="recruiter-logo">
+        <img src="assets/bajaj_allianz_365.webp" alt="BAJAJ" class="recruiter-logo">
       </div>
     </div>
   </section>
@@ -368,6 +372,9 @@
     </div>
   </section>
 
+  <!-- Toast Container for Notifications -->
+  <div class="toast-container"></div>
+  
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -456,10 +463,12 @@
             <label for="apply-program" class="form-label">Program of Interest</label>
             <select id="apply-program" name="program" class="form-select" required>
               <option value="">Select a program</option>
-              <option value="BBA">Bachelor of Business Administration</option>
-              <option value="BCA">Bachelor of Computer Applications</option>
-              <option value="MBA">Master of Business Administration</option>
-              <option value="MCA">Master of Computer Applications</option>
+              <option value="BBA(H)">Bachelor of Business Administration Honours</option>
+              <option value="BBA IN HOSPITAL MANAGEMENT">BBA In Hospital Management</option>
+              <option value="BBA IN Hotel And HOSPITAL MANAGEMENT">BBA In Hotel And Hospitality Management</option>
+              <option value="BCA(H)">Bachelor of Computer Applications Honours</option>
+              <option value="MBA REGULAR">Master of Business Administration Regular</option>
+              <option value="MBA WITH SPECIALIZATION IN BUSINESS ANALYST">MBA With Specialization In Business Analytics & Data Science</option>
             </select>
           </div>
           
@@ -468,9 +477,6 @@
       </div>
     </div>
   </div>
-
-  <!-- Toast Container -->
-  <div class="toast-container"></div>
 
   <!-- JavaScript -->
   <script src="js/main.js"></script>
