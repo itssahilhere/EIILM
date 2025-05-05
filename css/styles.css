@@ -1227,7 +1227,8 @@ a:hover {
 @media (max-width: 768px) {
   .mobile-menu-toggle {
     display: block;
-    right: 4rem; /* More space for theme toggle */
+    right: 3rem; /* More space for theme toggle */
+    top:4.3rem
   }
 
   .theme-toggle {
