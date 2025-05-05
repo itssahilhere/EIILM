@@ -1,484 +1,771 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EIILM - Eastern Institute For Integrated Learning In Management</title>
-  <meta name="description" content="Eastern Institute For Integrated Learning In Management (EIILM) - Leading educational institution offering BBA, BCA programs in Kolkata">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/eiilm-logo.png">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
-      <div class="logo">
-        <img src="assets/image.png" alt="EIILM Logo">
-      </div>
-      
-      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-      
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#why-eiilm">Why Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#" class="nav-highlight download-brochure-btn">
-          <i class="fas fa-download"></i> Brochure
-        </a>
-      </nav>
-      
-      <button class="theme-toggle" id="theme-toggle">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CIEM - Calcutta Institute Of Engineering And Management</title>
+    <meta
+      name="description"
+      content="Calcutta Institute of
+  Engineering and Management(CIEM)- Leading educational institution offering BBA, BCA programs in Kolkata"
+    />
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1 class="hero-title">Transform Your Career with EIILM College</h1>
-        <p class="hero-subtitle">Get a world-class education with industry-focused programs designed to prepare you for success in today's competitive business environment.</p>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img src="assets/image.png" alt="EIILM Logo" />
+          <p class="logo-text">
+            Calcutta Institute Of<br />Engineering And Management
+          </p>
+        </div>
+
+        <!-- <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button> -->
+
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#why-eiilm">Why Us</a>
+          <a href="#contact">Contact</a>
+          <a href="#" class="nav-highlight download-brochure-btn">
+            <i class="fas fa-download"></i> Brochure
+          </a>
+        </nav>
+
+        <!-- <button class="theme-toggle" id="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </button> -->
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Shape Your Future with <br /><span style="color: #d4af37"
+              >CIEM</span
+            >
+          </h1>
+          <p class="hero-subtitle">
+            Unlock your potential with our Industry-focused programs designed to
+            prepare you for a successful career.
+          </p>
+          <button class="btn download-brochure-btn">Download Brochure</button>
+        </div>
+
+        <div class="hero-form">
+          <h3 class="hero-form-title">Request Information</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="program" class="form-label"
+                >Program of Interest</label
+              >
+              <select id="program" name="program" class="form-select" required>
+                <option value="">Select a program</option>
+                <option value="BBA(H)">
+                  Bachelor of Business Administration Honours
+                </option>
+                <option value="BBA IN HOSPITAL MANAGEMENT">
+                  BBA In Hospital Management
+                </option>
+                <option value="BBA IN Hotel And HOSPITAL MANAGEMENT">
+                  BBA In Hotel And Hospitality Management
+                </option>
+                <option value="BCA(H)">
+                  Bachelor of Computer Applications Honours
+                </option>
+                <option value="MBA REGULAR">
+                  Master of Business Administration Regular
+                </option>
+                <option value="MBA WITH SPECIALIZATION IN BUSINESS ANALYST">
+                  MBA With Specialization In Business Analytics & Data Science
+                </option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section section-alt" id="stats">
+      <div class="container">
+        <h2 class="section-title">Our Success in Numbers</h2>
+        <p class="section-subtitle">
+          CIEM has a proven track record of academic excellence and career
+          success for our students.
+        </p>
+
+        <div class="stats-container">
+          <div class="stat-card">
+            <div class="stat-value">15+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value">5,000+</div>
+            <div class="stat-label">Alumni Network</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value">90%</div>
+            <div class="stat-label">Placement Rate</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-value">100+</div>
+            <div class="stat-label">Corporate Partners</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About CIEM</h2>
+        <p class="section-subtitle">
+          Discover our journey of excellence in education since 1995.
+        </p>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/campuslife.jpg" alt="EIILM Campus" />
+          </div>
+
+          <div class="about-text">
+            <h3>Leading the Way in Management Education</h3>
+            <p>
+              The Calcutta Institute of Engineering and Management (CIEM) was
+              established with a vision to provide world-class education that
+              blends theoretical knowledge with practical skills. Located in
+              Kolkata, our institution has been at the forefront of nurturing
+              future business leaders and technology innovators.
+            </p>
+
+            <p>
+              Our pedagogy focuses on integrated learning approaches that
+              prepare students not just for their first job, but for a lifetime
+              of career growth. With state-of-the-art facilities, experienced
+              faculty, and strong industry connections, CIEM offers an
+              educational experience that truly transforms lives.
+            </p>
+
+            <button class="btn apply-btn">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="section section-alt" id="programs">
+      <div class="container">
+        <h2 class="section-title">Our Programs</h2>
+        <p class="section-subtitle">
+          Discover our comprehensive range of programs designed to prepare you
+          for a successful career.
+        </p>
+
+        <div class="programs-container" id="programs-container">
+          <div class="program-card">
+            <div class="program-content">
+              <h3 class="program-title">
+                Bachelor of Business Administration (BBA)
+              </h3>
+              <div class="program-duration">3 Years</div>
+
+              <div class="program-highlights">
+                <h4>Program Highlights</h4>
+                <ul>
+                  <li>Comprehensive business fundamentals</li>
+                  <li>Specializations in Marketing, Finance, HR</li>
+                  <li>Industry-integrated curriculum</li>
+                  <li>Internship opportunities with leading companies</li>
+                </ul>
+              </div>
+
+              <div class="program-careers">
+                <h4>Career Opportunities</h4>
+                <ul>
+                  <li>Management Trainee</li>
+                  <li>Business Analyst</li>
+                  <li>Marketing Executive</li>
+                  <li>Entrepreneur</li>
+                </ul>
+              </div>
+
+              <button class="btn apply-btn">Apply Now</button>
+            </div>
+          </div>
+          <!-- In the Programs section, add these new program cards after the existing ones -->
+          <div class="program-card">
+            <div class="program-content">
+              <h3 class="program-title">
+                Bachelor of Technology (B.Tech) in Computer Science &
+                Engineering
+              </h3>
+              <div class="program-duration">4 Years</div>
+
+              <div class="program-highlights">
+                <h4>Program Highlights</h4>
+                <ul>
+                  <li>Comprehensive computer science fundamentals</li>
+                  <li>Specializations in AI, ML, and Data Science</li>
+                  <li>Industry-aligned curriculum</li>
+                  <li>Hands-on lab sessions and projects</li>
+                </ul>
+              </div>
+
+              <div class="program-careers">
+                <h4>Career Opportunities</h4>
+                <ul>
+                  <li>Software Engineer</li>
+                  <li>Data Scientist</li>
+                  <li>Cloud Architect</li>
+                  <li>Cybersecurity Analyst</li>
+                </ul>
+              </div>
+
+              <button class="btn apply-btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-content">
+              <h3 class="program-title">
+                Bachelor of Technology (B.Tech) in Information Technology
+              </h3>
+              <div class="program-duration">4 Years</div>
+
+              <div class="program-highlights">
+                <h4>Program Highlights</h4>
+                <ul>
+                  <li>Focus on IT infrastructure and systems</li>
+                  <li>Networking and cybersecurity emphasis</li>
+                  <li>Enterprise software development</li>
+                  <li>Industry certifications integrated</li>
+                </ul>
+              </div>
+
+              <div class="program-careers">
+                <h4>Career Opportunities</h4>
+                <ul>
+                  <li>IT Consultant</li>
+                  <li>Network Administrator</li>
+                  <li>Systems Analyst</li>
+                  <li>IT Project Manager</li>
+                </ul>
+              </div>
+
+              <button class="btn apply-btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-content">
+              <h3 class="program-title">
+                Bachelor of Technology (B.Tech) in Electronics & Communication
+                Engineering
+              </h3>
+              <div class="program-duration">4 Years</div>
+
+              <div class="program-highlights">
+                <h4>Program Highlights</h4>
+                <ul>
+                  <li>Comprehensive electronics fundamentals</li>
+                  <li>Embedded systems and VLSI design</li>
+                  <li>Communication systems focus</li>
+                  <li>IoT and wireless technologies</li>
+                </ul>
+              </div>
+
+              <div class="program-careers">
+                <h4>Career Opportunities</h4>
+                <ul>
+                  <li>Electronics Design Engineer</li>
+                  <li>Communication Engineer</li>
+                  <li>Embedded Systems Engineer</li>
+                  <li>RF Engineer</li>
+                </ul>
+              </div>
+
+              <button class="btn apply-btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-content">
+              <h3 class="program-title">
+                Bachelor of Computer Applications (BCA)
+              </h3>
+              <div class="program-duration">3 Years</div>
+
+              <div class="program-highlights">
+                <h4>Program Highlights</h4>
+                <ul>
+                  <li>Strong programming foundation</li>
+                  <li>Modern technology stack</li>
+                  <li>Industry-relevant projects</li>
+                  <li>Focus on problem-solving skills</li>
+                </ul>
+              </div>
+
+              <div class="program-careers">
+                <h4>Career Opportunities</h4>
+                <ul>
+                  <li>Software Developer</li>
+                  <li>Web Developer</li>
+                  <li>System Analyst</li>
+                  <li>Database Administrator</li>
+                </ul>
+              </div>
+
+              <button class="btn apply-btn">Apply Now</button>
+            </div>
+          </div>
+
+          <div class="program-card">
+            <div class="program-content">
+              <h3 class="program-title">
+                Master of Business Administration (MBA)
+              </h3>
+              <div class="program-duration">2 Years</div>
+
+              <div class="program-highlights">
+                <h4>Program Highlights</h4>
+                <ul>
+                  <li>Advanced business strategy</li>
+                  <li>Multiple specializations</li>
+                  <li>Case-based learning approach</li>
+                  <li>Leadership development focus</li>
+                </ul>
+              </div>
+
+              <div class="program-careers">
+                <h4>Career Opportunities</h4>
+                <ul>
+                  <li>Business Consultant</li>
+                  <li>Project Manager</li>
+                  <li>Marketing Manager</li>
+                  <li>Financial Analyst</li>
+                </ul>
+              </div>
+
+              <button class="btn apply-btn">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="program-controls">
+          <button id="program-prev" class="program-control">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="program-next" class="program-control">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Student Testimonials</h2>
+        <p class="section-subtitle">
+          Hear what our students and alumni have to say about their experience
+          at CIEM.
+        </p>
+
+        <div class="testimonials-container">
+          <div class="testimonial-card">
+            <img
+              src="assets/candidate3.jpg"
+              alt="Rahul Sharma"
+              class="testimonial-image"
+            />
+            <div class="testimonial-content">
+              <p class="testimonial-quote">
+                "My experience at CIEM has been transformative. The faculty,
+                curriculum, and industry exposure helped me secure a position at
+                a leading multinational company right after graduation."
+              </p>
+              <div class="testimonial-author">Beas Das</div>
+              <div class="testimonial-program">BBA Graduate, 2023</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="assets/candidate1.jpg"
+              alt="Priya Patel"
+              class="testimonial-image"
+            />
+            <div class="testimonial-content">
+              <p class="testimonial-quote">
+                "The practical approach to learning at CIEM gave me an edge in
+                the job market. The projects and internships were instrumental
+                in building my professional portfolio."
+              </p>
+              <div class="testimonial-author">Neha Dokania</div>
+              <div class="testimonial-program">BCA Graduate, 2022</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img
+              src="assets/candidate2.jpg"
+              alt="Amit Gupta"
+              class="testimonial-image"
+            />
+            <div class="testimonial-content">
+              <p class="testimonial-quote">
+                "The MBA program at CIEM equipped me with both strategic
+                thinking and practical leadership skills. The network I built
+                during my time here continues to benefit my career."
+              </p>
+              <div class="testimonial-author">Sahil Agarwal</div>
+              <div class="testimonial-program">MBA Graduate, 2024</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button id="testimonial-prev" class="testimonial-control">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="testimonial-next" class="testimonial-control">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why EIILM Section -->
+    <section class="section section-alt" id="why-eiilm">
+      <div class="container">
+        <h2 class="section-title">Why Choose CIEM?</h2>
+        <p class="section-subtitle">
+          Our unique advantages that set us apart from other institutions.
+        </p>
+
+        <div class="features-container">
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="feature-title">Industry-Focused Curriculum</h3>
+            <p class="feature-description">
+              Our programs are designed in consultation with industry experts to
+              ensure relevance and employability.
+            </p>
+          </div>
+
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="feature-title">Expert Faculty</h3>
+            <p class="feature-description">
+              Learn from experienced professors with academic excellence and
+              industry background.
+            </p>
+          </div>
+
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3 class="feature-title">Corporate Connections</h3>
+            <p class="feature-description">
+              Strong ties with over 100 companies for internships, placements,
+              and industry projects.
+            </p>
+          </div>
+
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3 class="feature-title">Global Perspective</h3>
+            <p class="feature-description">
+              International collaborations and exchange programs for a global
+              learning experience.
+            </p>
+          </div>
+
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h3 class="feature-title">Modern Infrastructure</h3>
+            <p class="feature-description">
+              State-of-the-art campus with modern classrooms, labs, and
+              recreational facilities.
+            </p>
+          </div>
+
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3 class="feature-title">Placement Support</h3>
+            <p class="feature-description">
+              Dedicated placement cell with a remarkable track record of placing
+              students in top companies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recruiters Section -->
+    <section class="section" id="recruiters">
+      <div class="container">
+        <h2 class="section-title">Our Recruiters</h2>
+        <p class="section-subtitle">
+          Leading companies that regularly recruit from CIEM.
+        </p>
+
+        <div class="recruiters-container">
+          <img src="assets/airtel.webp" alt="AIRTEL" class="recruiter-logo" />
+          <img src="assets/amul.webp" alt="AMUL" class="recruiter-logo" />
+          <img src="assets/bata.webp" alt="BATA" class="recruiter-logo" />
+          <img src="assets/tcs-1.webp" alt="TCS" class="recruiter-logo" />
+          <img
+            src="assets/deloitte-logo.webp"
+            alt="DELOITTE"
+            class="recruiter-logo"
+          />
+          <img src="assets/byus.webp" alt="BYJUS" class="recruiter-logo" />
+          <img
+            src="assets/bajaj_allianz_365.webp"
+            alt="BAJAJ"
+            class="recruiter-logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+      <div class="container">
+        <h2 class="cta-title">Ready to Begin Your Journey?</h2>
+        <p class="cta-subtitle">
+          Take the first step towards a successful career by applying to CIEM
+          today.
+        </p>
+        <button class="btn apply-btn">Apply Now</button>
         <button class="btn download-brochure-btn">Download Brochure</button>
       </div>
-      
-      <div class="hero-form">
-        <h3 class="hero-form-title">Request Information</h3>
-        <form id="contact-form">
-          <div class="form-group">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" id="name" name="name" class="form-input" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" id="phone" name="phone" class="form-input" required>
-          </div>
-          <div class="form-group">
-            <label for="program" class="form-label">Program of Interest</label>
-            <select id="program" name="program" class="form-select" required>
-              <option value="">Select a program</option>
-              <option value="BBA(H)">Bachelor of Business Administration Honours</option>
-              <option value="BBA IN HOSPITAL MANAGEMENT">BBA In Hospital Management</option>
-              <option value="BBA IN Hotel And HOSPITAL MANAGEMENT">BBA In Hotel And Hospitality Management</option>
-              <option value="BCA(H)">Bachelor of Computer Applications Honours</option>
-              <option value="MBA REGULAR">Master of Business Administration Regular</option>
-              <option value="MBA WITH SPECIALIZATION IN BUSINESS ANALYST">MBA With Specialization In Business Analytics & Data Science</option>
-            </select>
-          </div>
-          
-          <button type="submit" class="btn btn-primary btn-full">Submit</button>
-        </form>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Stats Section -->
-  <section class="section section-alt" id="stats">
-    <div class="container">
-      <h2 class="section-title">Our Success in Numbers</h2>
-      <p class="section-subtitle">EIILM has a proven track record of academic excellence and career success for our students.</p>
-      
-      <div class="stats-container">
-        <div class="stat-card">
-          <div class="stat-value">25+</div>
-          <div class="stat-label">Years of Excellence</div>
-        </div>
-        
-        <div class="stat-card">
-          <div class="stat-value">10,000+</div>
-          <div class="stat-label">Alumni Network</div>
-        </div>
-        
-        <div class="stat-card">
-          <div class="stat-value">95%</div>
-          <div class="stat-label">Placement Rate</div>
-        </div>
-        
-        <div class="stat-card">
-          <div class="stat-value">200+</div>
-          <div class="stat-label">Corporate Partners</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Toast Container for Notifications -->
+    <div class="toast-container"></div>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">About EIILM</h2>
-      <p class="section-subtitle">Discover our journey of excellence in education since 1995.</p>
-      
-      <div class="about-content">
-        <div class="about-image">
-          <img src="assets/campuslife.jpg" alt="EIILM Campus">
-        </div>
-        
-        <div class="about-text">
-          <h3>Leading the Way in Management Education</h3>
-          <p>The Eastern Institute for Integrated Learning in Management (EIILM) was established with a vision to provide world-class education that blends theoretical knowledge with practical skills. Located in Kolkata, our institution has been at the forefront of nurturing future business leaders and technology innovators.</p>
-          
-          <p>Our pedagogy focuses on integrated learning approaches that prepare students not just for their first job, but for a lifetime of career growth. With state-of-the-art facilities, experienced faculty, and strong industry connections, EIILM offers an educational experience that truly transforms lives.</p>
-          
-          <button class="btn apply-btn">Apply Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Programs Section -->
-  <section class="section section-alt" id="programs">
-    <div class="container">
-      <h2 class="section-title">Our Programs</h2>
-      <p class="section-subtitle">Discover our comprehensive range of programs designed to prepare you for a successful career.</p>
-      
-      <div class="programs-container">
-        <div class="program-card">
-          <div class="program-content">
-            <h3 class="program-title">Bachelor of Business Administration (BBA)</h3>
-            <div class="program-duration">3 Years</div>
-            
-            <div class="program-highlights">
-              <h4>Program Highlights</h4>
-              <ul>
-                <li>Comprehensive business fundamentals</li>
-                <li>Specializations in Marketing, Finance, HR</li>
-                <li>Industry-integrated curriculum</li>
-                <li>Internship opportunities with leading companies</li>
-              </ul>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="assets/image.png" alt="CIEM Logo" />
+              <p class="logo-text">
+                Calcutta Institute Of <wbr />Engineering And Management
+              </p>
             </div>
-            
-            <div class="program-careers">
-              <h4>Career Opportunities</h4>
-              <ul>
-                <li>Management Trainee</li>
-                <li>Business Analyst</li>
-                <li>Marketing Executive</li>
-                <li>Entrepreneur</li>
-              </ul>
+            <p class="footer-about">
+              Calcutta Institute Of Engineering And Management (CIEM) is a
+              premier educational institution offering high-quality programs in
+              business and technology.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#why-eiilm">Why Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-heading">Programs</h3>
+            <ul class="footer-links">
+              <li><a href="#programs">BBA</a></li>
+              <li><a href="#programs">BCA</a></li>
+              <li><a href="#programs">MBA</a></li>
+              <li><a href="#programs">MCA</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3 class="footer-heading">Contact Us</h3>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+              <span>24/1A, Chandi Ghosh Rd, Kudghat, Kolkata- 700040</span>
             </div>
-            
-            <button class="btn apply-btn">Apply Now</button>
-          </div>
-        </div>
-        
-        <div class="program-card">
-          <div class="program-content">
-            <h3 class="program-title">Bachelor of Computer Applications (BCA)</h3>
-            <div class="program-duration">3 Years</div>
-            
-            <div class="program-highlights">
-              <h4>Program Highlights</h4>
-              <ul>
-                <li>Strong programming foundation</li>
-                <li>Modern technology stack</li>
-                <li>Industry-relevant projects</li>
-                <li>Focus on problem-solving skills</li>
-              </ul>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone footer-contact-icon"></i>
+              <span>+91 (033) 1234-5678</span>
             </div>
-            
-            <div class="program-careers">
-              <h4>Career Opportunities</h4>
-              <ul>
-                <li>Software Developer</li>
-                <li>Web Developer</li>
-                <li>System Analyst</li>
-                <li>Database Administrator</li>
-              </ul>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope footer-contact-icon"></i>
+              <span>admissions@ciem.edu</span>
             </div>
-            
-            <button class="btn apply-btn">Apply Now</button>
-          </div>
-        </div>
-        
-        <div class="program-card">
-          <div class="program-content">
-            <h3 class="program-title">Master of Business Administration (MBA)</h3>
-            <div class="program-duration">2 Years</div>
-            
-            <div class="program-highlights">
-              <h4>Program Highlights</h4>
-              <ul>
-                <li>Advanced business strategy</li>
-                <li>Multiple specializations</li>
-                <li>Case-based learning approach</li>
-                <li>Leadership development focus</li>
-              </ul>
+
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
             </div>
-            
-            <div class="program-careers">
-              <h4>Career Opportunities</h4>
-              <ul>
-                <li>Business Consultant</li>
-                <li>Project Manager</li>
-                <li>Marketing Manager</li>
-                <li>Financial Analyst</li>
-              </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy;2025 Calcutta Institute of Engineering and Management. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Apply Dialog -->
+    <div class="dialog-overlay" id="apply-dialog">
+      <div class="dialog-content">
+        <div class="dialog-header">
+          <h3 class="dialog-title">Apply to CIEM</h3>
+          <button class="dialog-close" id="dialog-close">&times;</button>
+        </div>
+
+        <div class="dialog-body">
+          <form id="apply-form">
+            <div class="form-group">
+              <label for="apply-name" class="form-label">Full Name</label>
+              <input
+                type="text"
+                id="apply-name"
+                name="name"
+                class="form-input"
+                required
+              />
             </div>
-            
-            <button class="btn apply-btn">Apply Now</button>
-          </div>
+
+            <div class="form-group">
+              <label for="apply-phone" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                id="apply-phone"
+                name="phone"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="apply-program" class="form-label"
+                >Program of Interest</label
+              >
+              <select
+                id="apply-program"
+                name="program"
+                class="form-select"
+                required
+              >
+                <option value="">Select a program</option>
+                <option value="BBA(H)">
+                  Bachelor of Business Administration Honours
+                </option>
+                <option value="BBA IN HOSPITAL MANAGEMENT">
+                  BBA In Hospital Management
+                </option>
+                <option value="BBA IN Hotel And HOSPITAL MANAGEMENT">
+                  BBA In Hotel And Hospitality Management
+                </option>
+                <option value="BCA(H)">
+                  Bachelor of Computer Applications Honours
+                </option>
+                <option value="MBA REGULAR">
+                  Master of Business Administration Regular
+                </option>
+                <option value="MBA WITH SPECIALIZATION IN BUSINESS ANALYST">
+                  MBA With Specialization In Business Analytics & Data Science
+                </option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Submit Application
+            </button>
+          </form>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Testimonials Section -->
-  <section class="section" id="testimonials">
-    <div class="container">
-      <h2 class="section-title">Student Testimonials</h2>
-      <p class="section-subtitle">Hear what our students and alumni have to say about their experience at EIILM.</p>
-      
-      <div class="testimonials-container">
-        <div class="testimonial-card">
-          <img src="assets/candidate3.jpg" alt="Rahul Sharma" class="testimonial-image">
-          <div class="testimonial-content">
-            <p class="testimonial-quote">"My experience at EIILM has been transformative. The faculty, curriculum, and industry exposure helped me secure a position at a leading multinational company right after graduation."</p>
-            <div class="testimonial-author">Beas Das</div>
-            <div class="testimonial-program">BBA Graduate, 2023</div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <img src="assets/candidate1.jpg" alt="Priya Patel" class="testimonial-image">
-          <div class="testimonial-content">
-            <p class="testimonial-quote">"The practical approach to learning at EIILM gave me an edge in the job market. The projects and internships were instrumental in building my professional portfolio."</p>
-            <div class="testimonial-author">Priya Patel</div>
-            <div class="testimonial-program">BCA Graduate, 2022</div>
-          </div>
-        </div>
-        
-        <div class="testimonial-card">
-          <img src="assets/candidate2.jpg" alt="Amit Gupta" class="testimonial-image">
-          <div class="testimonial-content">
-            <p class="testimonial-quote">"The MBA program at EIILM equipped me with both strategic thinking and practical leadership skills. The network I built during my time here continues to benefit my career."</p>
-            <div class="testimonial-author">Amit Gupta</div>
-            <div class="testimonial-program">MBA Graduate, 2021</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="testimonial-controls">
-        <button id="testimonial-prev" class="testimonial-control">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button id="testimonial-next" class="testimonial-control">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why EIILM Section -->
-  <section class="section section-alt" id="why-eiilm">
-    <div class="container">
-      <h2 class="section-title">Why Choose EIILM?</h2>
-      <p class="section-subtitle">Our unique advantages that set us apart from other institutions.</p>
-      
-      <div class="features-container">
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <h3 class="feature-title">Industry-Focused Curriculum</h3>
-          <p class="feature-description">Our programs are designed in consultation with industry experts to ensure relevance and employability.</p>
-        </div>
-        
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-users"></i>
-          </div>
-          <h3 class="feature-title">Expert Faculty</h3>
-          <p class="feature-description">Learn from experienced professors with academic excellence and industry background.</p>
-        </div>
-        
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <h3 class="feature-title">Corporate Connections</h3>
-          <p class="feature-description">Strong ties with over 200 companies for internships, placements, and industry projects.</p>
-        </div>
-        
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-globe"></i>
-          </div>
-          <h3 class="feature-title">Global Perspective</h3>
-          <p class="feature-description">International collaborations and exchange programs for a global learning experience.</p>
-        </div>
-        
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-laptop"></i>
-          </div>
-          <h3 class="feature-title">Modern Infrastructure</h3>
-          <p class="feature-description">State-of-the-art campus with modern classrooms, labs, and recreational facilities.</p>
-        </div>
-        
-        <div class="feature-card animate-on-scroll">
-          <div class="feature-icon">
-            <i class="fas fa-handshake"></i>
-          </div>
-          <h3 class="feature-title">Placement Support</h3>
-          <p class="feature-description">Dedicated placement cell with a remarkable track record of placing students in top companies.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recruiters Section -->
-  <section class="section" id="recruiters">
-    <div class="container">
-      <h2 class="section-title">Our Recruiters</h2>
-      <p class="section-subtitle">Leading companies that regularly recruit from EIILM.</p>
-      
-      <div class="recruiters-container">
-        <img src="assets/airtel.webp" alt="AIRTEL" class="recruiter-logo">
-        <img src="assets/amul.webp" alt="AMUL" class="recruiter-logo">
-        <img src="assets/bata.webp" alt="BATA" class="recruiter-logo">
-        <img src="assets/tcs-1.webp" alt="TCS" class="recruiter-logo">
-        <img src="assets/deloitte-logo.webp" alt="DELOITTE" class="recruiter-logo">
-        <img src="assets/byus.webp" alt="BYJUS" class="recruiter-logo">
-        <img src="assets/bajaj_allianz_365.webp" alt="BAJAJ" class="recruiter-logo">
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta" id="contact">
-    <div class="container">
-      <h2 class="cta-title">Ready to Begin Your Journey?</h2>
-      <p class="cta-subtitle">Take the first step towards a successful career by applying to EIILM today.</p>
-      <button class="btn apply-btn">Apply Now</button>
-      <button class="btn download-brochure-btn">Download Brochure</button>
-    </div>
-  </section>
-
-  <!-- Toast Container for Notifications -->
-  <div class="toast-container"></div>
-  
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-container">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="assets/image.png" alt="EIILM Logo">
-          </div>
-          <p class="footer-about">Eastern Institute For Integrated Learning In Management (EIILM) is a premier educational institution offering high-quality programs in business and technology.</p>
-        </div>
-        
-        <div class="footer-section">
-          <h3 class="footer-heading">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#why-eiilm">Why Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h3 class="footer-heading">Programs</h3>
-          <ul class="footer-links">
-            <li><a href="#programs">BBA</a></li>
-            <li><a href="#programs">BCA</a></li>
-            <li><a href="#programs">MBA</a></li>
-            <li><a href="#programs">MCA</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h3 class="footer-heading">Contact Us</h3>
-          <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt footer-contact-icon"></i>
-            <span>123 Campus Road, Kolkata, West Bengal, India</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-phone footer-contact-icon"></i>
-            <span>+91 (033) 1234-5678</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-envelope footer-contact-icon"></i>
-            <span>admissions@eiilm.edu</span>
-          </div>
-          
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; 2025 Eastern Institute For Integrated Learning In Management. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Apply Dialog -->
-  <div class="dialog-overlay" id="apply-dialog">
-    <div class="dialog-content">
-      <div class="dialog-header">
-        <h3 class="dialog-title">Apply to EIILM</h3>
-        <button class="dialog-close" id="dialog-close">&times;</button>
-      </div>
-      
-      <div class="dialog-body">
-        <form id="apply-form">
-          <div class="form-group">
-            <label for="apply-name" class="form-label">Full Name</label>
-            <input type="text" id="apply-name" name="name" class="form-input" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="apply-phone" class="form-label">Phone Number</label>
-            <input type="tel" id="apply-phone" name="phone" class="form-input" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="apply-program" class="form-label">Program of Interest</label>
-            <select id="apply-program" name="program" class="form-select" required>
-              <option value="">Select a program</option>
-              <option value="BBA(H)">Bachelor of Business Administration Honours</option>
-              <option value="BBA IN HOSPITAL MANAGEMENT">BBA In Hospital Management</option>
-              <option value="BBA IN Hotel And HOSPITAL MANAGEMENT">BBA In Hotel And Hospitality Management</option>
-              <option value="BCA(H)">Bachelor of Computer Applications Honours</option>
-              <option value="MBA REGULAR">Master of Business Administration Regular</option>
-              <option value="MBA WITH SPECIALIZATION IN BUSINESS ANALYST">MBA With Specialization In Business Analytics & Data Science</option>
-            </select>
-          </div>
-          
-          <button type="submit" class="btn btn-primary btn-full">Submit Application</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
