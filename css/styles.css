@@ -1,32 +1,32 @@
 /* Main CSS file for EIILM Landing Page */
 :root {
-  --primary: #8b1e3f;
-  --primary-dark: #4a0e2c;
-  --primary-light: #f2d7d9;
-  --secondary: #aa4b68;
-  --accent: #d4af37;
-  --accent-hover: #d97b2d;
+  --primary: #032349;
+  --primary-dark: #021a36;
+  --primary-light: #d6e4ff;
+  --secondary: #1a4b8c;
+  --accent: #ff7d00;
+  --accent-hover: #e56d00;
   --text-light: #f8f9fa;
   --text-dark: #333;
-  --background: #faf8f0;
-  --background-alt: #faf8f0;
-  --border: #e9ecef;
+  --background: #f5f7fa;
+  --background-alt: #ffffff;
+  --border: #e1e5eb;
   --border-radius: 0.5rem;
   --transition: all 0.3s ease;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --program-card-bg: #f1eee0f2;
-  --program-highlight: #aa4b68;
-  --program-duration: #c6a538;
+  --program-card-bg: #ffffff;
+  --program-highlight: #1a4b8c;
+  --program-duration: #ff7d00;
 }
 
 .dark-theme {
-  --primary: #17385d;
-  --primary-dark: #0f2b47;
-  --primary-light: #254a73;
-  --secondary: #242e7f;
-  --accent: #e78e44;
-  --accent-hover: #d97b2d;
+  --primary: #032349;
+  --primary-dark: #021a36;
+  --primary-light: #0a2d5a;
+  --secondary: #1a4b8c;
+  --accent: #ff7d00;
+  --accent-hover: #e56d00;
   --text-light: #f8f9fa;
   --text-dark: #f8f9fa;
   --background: #121212;
@@ -34,6 +34,7 @@
   --border: #333;
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --program-card-bg: #1e1e1e;
 }
 
 * {
@@ -152,18 +153,21 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  background-color: var(--primary); /* Fallback if image fails */
+  background-color: var(--primary); /* Fallback if image fails - now using #032349 */
   color: var(--text-light);
   padding: 4rem 0;
-  position: relative; /* Helps with child positioning */
+  position: relative;
   overflow: hidden;
-  background-image: linear-gradient(rgba(74, 14, 44, 0.52)),
+  background-image: linear-gradient(rgba(3, 35, 73, 0.60)), /* Updated to use primary color with opacity */
     url("../assets/6d8cb6fc6c0678532caf337509ec376dede931db.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  /* Remove z-index: -1 unless you want content hidden */
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -515,7 +519,7 @@ a:hover {
 }
 
 .recruiter-logo {
-  height: 60px;
+  height: 40px;
   object-fit: contain;
   /* filter: grayscale(100%); */
   opacity: 0.9;
@@ -523,7 +527,7 @@ a:hover {
 }
 
 .recruiter-logo:hover {
-  filter: brightness(130%);
+  filter: brightness(110%);
   /* opacity: 1; */
 }
 
@@ -1324,7 +1328,7 @@ a:hover {
 }
 
 .recruiter-logo {
-  height: 60px;
+  height: 40px;
   object-fit: contain;
   /* filter: grayscale(100%); */
   opacity: 0.8;
@@ -1344,19 +1348,19 @@ a:hover {
   transition-delay: 0.1s;
 }
 .recruiter-logo:nth-child(2) {
-  transition-delay: 0.2s;
+  transition-delay:0.1s;
 }
 .recruiter-logo:nth-child(3) {
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 }
 .recruiter-logo:nth-child(4) {
-  transition-delay: 0.4s;
+  transition-delay: 0.1ss;
 }
 .recruiter-logo:nth-child(5) {
-  transition-delay: 0.5s;
+  transition-delay: 0.1s;
 }
 .recruiter-logo:nth-child(6) {
-  transition-delay: 0.6s;
+  transition-delay: 0.1s;
 }
 
 /* Hover effects */
@@ -1427,5 +1431,35 @@ a:hover {
 @media (min-width: 992px) {
   .program-card {
     min-width: calc(33.33% - 1.33rem);
+  }
+}
+
+/* Style for the main website button */
+.nav-links a.main-website-btn {
+  background-color: var(--accent); /* Using accent color for distinction */
+}
+
+.nav-links a.main-website-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Ensure proper spacing between highlight buttons */
+.nav-links a.nav-highlight + a.nav-highlight {
+  margin-left: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links a.nav-highlight {
+    margin: 0.25rem;
+  }
+  
+  .nav-links a.nav-highlight + a.nav-highlight {
+    margin-left: 0.25rem;
   }
 }

@@ -387,8 +387,8 @@ function isElementInViewport(el) {
 function startBrochureDownload() {
   // Create the download link
   const link = document.createElement("a");
-  link.href = "assets/brochure.pdf";
-  link.download = "EIILM-College-Brochure.pdf";
+  link.href = "assets/ciem-College-Brochure.pdf";
+  link.download = "CIEM-College-Brochure.pdf";
 
   // Add link to body, trigger download, then remove
   document.body.appendChild(link);
